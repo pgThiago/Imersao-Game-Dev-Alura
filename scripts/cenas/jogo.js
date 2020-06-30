@@ -100,7 +100,7 @@ class Jogo {
       }     
 
     } 
-    if (pontuacao.chegouEmCem(vida.vidas)){    
+    if (pontuacao.chegouEmCem()){    
       vida.ganhaVida();    
     }
        
