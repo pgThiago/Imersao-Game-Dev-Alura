@@ -1,6 +1,8 @@
 class Pontuacao{
   constructor(){
     this.pontos = 0;
+    this.pontAumentaVida = 100;
+    
   }
   
   exibe(){
@@ -13,4 +15,27 @@ class Pontuacao{
   adicionaPontos(){
     this.pontos += 0.1;
   }
+  
+  chegouEmCem(){   
+       
+    if((parseInt(this.pontos) - parseInt(this.pontAumentaVida)) === 0){
+
+        this.pontAumentaVida = this.pontAumentaVida + 100;
+        
+        return true;
+    }
+  }
+  
 }
+
+
+
+
+
+
+
+
+
+
+
+

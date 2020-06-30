@@ -1,10 +1,9 @@
 class Vida{
 
-  constructor(total, inicial){
+  constructor(total){
   
     this.total = total;
-    this.inicial = inicial;
-    this.vidas = this.inicial;
+    this.vidas = this.total;
     
     this.largura = 25;
     this.altura = 25;
@@ -18,7 +17,7 @@ class Vida{
 
 
   draw(){  
-    for(let i = 0; i < this.vidas; i++){
+    for(let i = 0; i < this.total; i++){
         const margem =  i * 10;
         const posicao = this.xInicial * (1 + i);
         image(imagemVida, posicao + margem, this.y, this.largura, this.altura);
@@ -26,16 +25,14 @@ class Vida{
     }
   }
   
-  ganhaVida(){
-    
-    if(this.vidas <= this.total)
-      this.vidas++;
-  
+  ganhaVida(){    
+        this.vidas++;  
+        this.total = this.vidas;  
   }
   
-  perdeVida(){
-    
+  perdeVida(){    
       this.vidas--;
+      this.total = this.vidas; 
   
   }  
   

@@ -18,7 +18,7 @@ let somPulo;
 let cenario;
 
 let cenas;
-let cenaAtual = 'jogo';
+let cenaAtual = 'telaInicio';
 let telaInicio;
 
 

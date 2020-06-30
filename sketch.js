@@ -1,7 +1,7 @@
 function setup() {
   
     createCanvas(windowWidth, windowHeight);
-    frameRate(20);
+    frameRate(50);
     somDoJogo.loop();
 
     jogo = new Jogo();  
@@ -21,7 +21,7 @@ function setup() {
 
 function keyPressed(){
   
-    jogo.keyPressed(key);
+  jogo.keyPressed(key);
   
 }
 

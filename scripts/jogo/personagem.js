@@ -10,7 +10,7 @@ class Personagem extends Animacao{
     this.velocidadeDoPulo = 0;
     this.alturaDoPulo = -50;
     this.pulos = 0;
-    this.gravidade = 5;
+    this.gravidade = 10;
     this.invencivel = false;
   }
     
